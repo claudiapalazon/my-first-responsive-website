@@ -2,30 +2,48 @@
   height: 376px;
   padding: 30px 15px 45px 15px;
   font-family: $font-sec;
-  position: relative;
   line-height: 30px;
+  @media all and (min-width: 768px) {
+    height: 330px;
+    padding: 30px 39px 60px 39px;
+  }
+  @media all and (min-width: 1200px) {
+    height: 360px;
+    padding: 60px 275px 60px 275px;
+  }
   &--small {
     display: flex;
     align-items: center;
     text-transform: capitalize;
     color: $color-lightblue;
     font-size: 14px;
-    position: absolute;
-    bottom: 316px;
+    @media all and (min-width: 1200px) {
+      font-size: 16px;
+    }
   }
   &--h2 {
     font-family: $font-title;
-
     font-size: 24px;
     text-transform: capitalize;
-    position: absolute;
-    bottom: 255px;
+    margin-top: 1px;
+    @media all and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 45px;
+      margin-top: 0px;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 32px;
+    }
   }
   &--text {
     font-size: 18px;
-
-    position: absolute;
-    bottom: 120px;
+    margin-top: 15px;
+    @media all and (min-width: 768px) {
+      margin-top: 30px;
+      font-size: 20px;
+    }
+    @media all and (min-width: 1200px) {
+    }
   }
   &--link {
     font-size: 20px;
@@ -33,13 +51,19 @@
     text-align: center;
     width: 76px;
     height: 45px;
-    position: absolute;
-    bottom: 45px;
     border: 2px solid $color-bright-orange;
     border-radius: 30px;
     color: $color-bright-orange;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
+    @media all and (min-width: 768px) {
+      margin-top: 30px;
+      width: 91px;
+    }
+    @media all and (min-width: 1200px) {
+      width: 160px;
+    }
   }
 }
