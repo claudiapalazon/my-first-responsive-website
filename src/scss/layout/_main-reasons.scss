@@ -1,0 +1,91 @@
+.main__reasons {
+  height: 624px;
+  background-color: $color-iceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 30px;
+  padding: 30px 15px 60px 15px;
+  @media all and (min-width: 768px) {
+    height: 397px;
+    padding: 30px 40px 0px 40px;
+  }
+  @media all and (min-width: 1200px) {
+    height: 427px;
+    padding: 60px 68px 0px 68px;
+  }
+  &--h2 {
+    font-family: $font-title;
+    font-size: 24px;
+    text-transform: capitalize;
+    @media all and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 45px;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 32px;
+    }
+  }
+  &--div {
+    margin-top: 45px;
+    width: 180px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 45px;
+    @media all and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      width: auto;
+      grid-gap: 30px;
+    }
+    .div__article {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 30% 70%;
+      grid-gap: 2px;
+      @media all and (min-width: 768px) {
+        grid-gap: 14px;
+      }
+      &--h3 {
+        font-size: 18px;
+        font-family: $font-title;
+        line-height: 30px;
+        @media all and (min-width: 768px) {
+          font-size: 24px;
+        }
+      }
+      &--text {
+        font-size: 18px;
+        line-height: 30px;
+        font-family: $font-sec;
+        @media all and (min-width: 768px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  &--link {
+    width: 184px;
+    height: 45px;
+    background-color: $color-bright-orange;
+    margin-top: 45px;
+    font-family: $font-sec;
+    font-weight: 500px;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    @media all and (min-width: 768px) {
+      margin-top: 60px;
+      width: 210px;
+    }
+    @media all and (min-width: 1200px) {
+      width: 255px;
+    }
+  }
+}
