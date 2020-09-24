@@ -3,43 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Anonymous Proxy</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    <header class="header">
+      <a href="https://adalab.es" title="Nuestros servicios" target="_blank"
+        ><div class="header__menu-icon">
+          <img
+            src="./assets/images/ico-menu.svg"
+            alt="Menú de navegación"
+            title="Nuestros servicios"
+          /></div
+      ></a>
+      <div class="header__elements">
+        <h1 class="header__elements--h1">Anonimous Proxy</h1>
+        <h2 class="header__elements--h2">In hac habitasse platea dictumst.</h2>
+        <a href="#" title="Descubre nuestros servicios"
+          ><div class="header__elements--scroll">
+            <img
+              src="./assets/images/ico-scroll-down.svg"
+              alt="Descubre más de nosotros"
+              title="Descubre más de nosotros"
+            /></div
+        ></a>
+      </div>
+    </header>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
+    <main>
+      <section class="main__info">
+        <small class="main__info--small">Insomnia tips</small>
+        <h2 class="main__info--h2">Looking through a window</h2>
+        <p class="main__info--text">
+          Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
+          luctus ex diam nec lectus. Vivamus semper sodales rutrum.
+        </p>
+        <a href="https://adalab.es" title="Más información" target="_blank">
+          <div class="main__info--link">Go</div></a
+        >
+      </section>
+
+      <section class="main__reasons">
+        <h2 class="main__reasons--h2">3 reasons to purchase</h2>
+        <div class="main__reasons--div">
+          <article class="div__article">
+            <h3 class="div__article--h3">Ut sed metus</h3>
+            <p class="div__article--text">Lorem ipsum dolor sit amet, consecteur.</p>
+          </article>
+
+          <article class="div__article">
+            <h3 class="div__article--h3">Curabitur ac erat</h3>
+            <p class="div__article--text">Mauris mattis uma quis lorem molestie.</p>
+          </article>
+
+          <article class="div__article">
+            <h3 class="div__article--h3">Morbi dictum</h3>
+            <p class="div__article--text">Aliquam in dolor et dolor tincidunt.</p>
+          </article>
+
+        </div>
+        <a href="https://adalab.es" title="Más razones" target="_blank">
+          <div class="main__reasons--link">More reasons</div></a
+        >
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div>
+        <a href="" title=""
+          ><img src="./assets/images/ico-arrow.svg" alt="" title=""
+        /></a>
+      </div>
+
+      <div class="footer__div-small">
+        <small>&copy2017 </small>
+        <small>We ❤︎ components</small>
+      </div>
+      <nav class="footer__nav-menu">
+        <ul>
+          <li><a href="" title="">Articles</a></li>
+          <li><a href="" title="">Books</a></li>
+          <li><a href="" title="">Events</a></li>
+          <li><a href="" title="">Reasons</a></li>
+          <li><a href="" title="">Tips</a></li>
         </ul>
-      </main>
+      </nav>
+      <nav class="footer__nav-social">
+        <ul>
+          <li><a href="" title="">Twitter</a></li>
+          <li><a href="" title="">Instagram</a></li>
+          <li><a href="" title="">Mastodon social</a></li>
+        </ul>
+      </nav>
+    </footer>
 
-      <a class="link__adalab" href="https://adalab.es" target="_blank">Adalab</a>
-
-      <a class="link__github" href="https://github.com" target="_blank">GitHub</a>
-
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es" target="_blank">Adalab</a>
-
-        </small>
-      </footer>
-
-    </div>
-    <script src="./assets/js/main.js"></script>
   </body>
 </html>
