@@ -1,4 +1,100 @@
 .footer {
   background-color: $color-darkblue;
-  height: 240px;
+  height: 465px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  @media all and (min-width: 768px) {
+    height: 240px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 45px 0px 45px 0px;
+  }
+  &__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media all and (min-width: 768px) {
+      position: relative;
+      bottom: 45px;
+    }
+  }
+  &__arrow {
+    width: 45px;
+    height: 45px;
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transform: translate(0, -40px);
+    @media all and (min-width: 768px) {
+      transform: translate(0, -22px);
+    }
+  }
+  &__nav-social {
+    @media all and (min-width: 768px) {
+      width: 210px;
+      margin-left: 30px;
+      order: -1;
+    }
+    @media all and (min-width: 1200px) {
+      width: 160px;
+    }
+    &--social {
+      list-style: none;
+      margin-bottom: 30px;
+      .link {
+        font-family: $font-sec;
+        font-size: 16px;
+        line-height: 30px;
+        color: white;
+        text-transform: uppercase;
+        padding: 5px;
+      }
+    }
+  }
+  &__nav-menu {
+    @media all and (min-width: 768px) {
+      width: 210px;
+    }
+    @media all and (min-width: 1200px) {
+      width: 160px;
+    }
+    &--menu {
+      list-style: none;
+      margin-bottom: 30px;
+      .link {
+        font-family: $font-sec;
+        font-size: 16px;
+        line-height: 30px;
+        color: white;
+        text-transform: uppercase;
+        padding: 5px;
+      }
+    }
+  }
+  &__div-small {
+    display: flex;
+    flex-direction: column;
+    font-family: $font-sec;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 45px;
+    color: white;
+    @media all and (min-width: 768px) {
+      width: 210px;
+      margin-right: 30px;
+    }
+    @media all and (min-width: 1200px) {
+      width: 160px;
+    }
+    .heart {
+      color: $color-bright-orange;
+    }
+  }
 }
