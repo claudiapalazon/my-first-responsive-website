@@ -1,7 +1,7 @@
-@import 'core/variables';
-@import 'core/reset';
-@import 'components/links';
-@import 'layout/page';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'pages/index';
+@import "components/typography";
+@import "core/variables";
+@import "core/reset";
+@import "layout/header";
+@import "layout/main-info";
+@import "layout/main-reasons";
+@import "layout/footer";

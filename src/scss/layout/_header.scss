@@ -1,5 +1,81 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  background: url("../images/cover.jpg") no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  &__menu-icon {
+    width: 44px;
+    height: 44px;
+    background-color: $color-cerulean;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+  }
+  &__elements {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    &--h1 {
+      color: $color-white;
+      font-family: $font-main-header;
+      font-size: 42px;
+      line-height: 55px;
+      text-align: center;
+      text-transform: uppercase;
+      max-width: 400px;
+      position: absolute;
+      bottom: 174px;
+      @media all and (min-width: 768px) {
+        font-size: 80px;
+        line-height: 106px;
+        max-width: 748px;
+        bottom: 172px;
+      }
+      @media all and (min-width: 1200px) {
+        font-size: 100px;
+        line-height: 132px;
+        max-width: 748px;
+        bottom: 120px;
+      }
+    }
+    &--h2 {
+      color: $color-white;
+      font-family: $font-sec-header;
+      text-align: center;
+      font-size: 16px;
+      position: absolute;
+      bottom: 143px;
+      @media all and (min-width: 768px) {
+        font-size: 24px;
+        bottom: 120px;
+      }
+      @media all and (min-width: 1200px) {
+        bottom: 88px;
+      }
+    }
+    &--scroll {
+      width: 45px;
+      height: 45px;
+      background-color: $color-white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      transform: translate(0, -53px);
+      @media all and (min-width: 768px) {
+        transform: translate(0, -45px);
+      }
+      @media all and (min-width: 1200px) {
+        transform: translate(0, -13px);
+      }
+    }
+  }
 }
