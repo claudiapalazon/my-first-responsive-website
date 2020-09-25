@@ -59,6 +59,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    transition: background-color 1s ease, color 1s ease, transform 1s;
     @media all and (min-width: 768px) {
       margin-top: 30px;
       width: 91px;
@@ -66,5 +67,11 @@
     @media all and (min-width: 1200px) {
       width: 160px;
     }
+  }
+  &--link:hover {
+    background-color: $color-bright-orange;
+    color: $color-white;
+    border: $color-bright-orange;
+    transform: scale(1.1);
   }
 }
