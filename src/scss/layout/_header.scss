@@ -27,6 +27,25 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    overflow: hidden;
+    // ANIMACION
+    &--h1,
+    &--h2 {
+      animation-duration: 3s;
+      animation-name: intro;
+      @keyframes intro {
+        from {
+          transform: translate(0px, 500px);
+          opacity: 0;
+        }
+
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    }
+    // -----------
     &--h1 {
       color: $color-white;
       font-family: $font-title;
