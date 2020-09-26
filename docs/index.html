@@ -9,6 +9,9 @@
   </head>
 
   <body>
+    <!-- HEADER  
+    A la hora de realizar la semántica he decidido meter el botón de la hamburguesa en un "nav" ya que lo considero importante en la navegación de la página (Aunque en este caso no despliegue ningún menú). El resto de elementos los he metido en una misma sección, nos aportan información de la página y nos permiten empezar a navegar por ella. -->
+
     <header class="header" id="header">
       <nav>
         <a href="https://adalab.es" title="Nuestros servicios" target="_blank"
@@ -34,7 +37,13 @@
       </section>
     </header>
 
+    <!-- MAIN 
+    He separado el main en dos secciones ya que no tienen mucha relación entre ellas. -->
+
     <main>
+      <!-- MAIN INFO 
+      Esta es la primera sección del main -->
+
       <section class="main__info">
         <small class="main__info--small">Insomnia tips</small>
         <h2 class="main__info--h2">Looking through a window</h2>
@@ -46,6 +55,9 @@
           <div class="main__info--link">Go</div></a
         >
       </section>
+
+      <!-- MAIN REASONS 
+      Esta es la segunda sección del main. He decidido hacer un nuevo documento html para los artículos, donde he metido su estructura y así desde aquí no tengo que repetir la misma 3 veces. -->
 
       <section class="main__reasons" id="reasons">
         <h2 class="main__reasons--h2">3 reasons to purchase</h2>
@@ -73,18 +85,22 @@
 
     </main>
 
+    <!-- FOOTER 
+    Esta sección la he dividido de la siguiente manera: Un "link" al principio de la página, dos "navs" que contienen los links a redes sociales y otros elementos de interés, así como un "div" para la pequeña información del copy, la cual no tiene mucha importancia). 
+    Observando el diseño en distintos dispositivos, se ha decidido incluir en un mismo "div" el link para volver al principio de la página y el menú con elementos de interés, ya que están posicionados igual uno del otro en todos los tamaños de pantalla. -->
+
     <footer class="footer">
       <div class="footer__div">
         <a href="#header" title="Vuelve al principio de la página"
-          ><div class="footer__arrow">
+          ><div class="footer__div--arrow">
             <img
               src="./assets/images/ico-arrow.svg"
               alt="Vuelve al principio de la página"
               title="Vuelve al principio de la página"
             /></div
         ></a>
-        <nav class="footer__nav-menu">
-          <ul class="footer__nav-menu--menu">
+        <nav class="footer__div--nav-menu">
+          <ul class="nav-menu__menu">
             <li>
               <a
                 class="link"
@@ -161,6 +177,7 @@
           </li>
         </ul>
       </nav>
+
       <div class="footer__div-small">
         <small class="small">&copy2017</small>
         <small class="small">We <span class="heart">❤︎</span> components</small>
