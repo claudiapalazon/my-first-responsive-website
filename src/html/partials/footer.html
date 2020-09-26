@@ -1,15 +1,19 @@
+<!-- FOOTER 
+Esta sección la he dividido de la siguiente manera: Un "link" al principio de la página, dos "navs" que contienen los links a redes sociales y otros elementos de interés, así como un "div" para la pequeña información del copy, la cual no tiene mucha importancia). 
+Observando el diseño en distintos dispositivos, se ha decidido incluir en un mismo "div" el link para volver al principio de la página y el menú con elementos de interés, ya que están posicionados igual uno del otro en todos los tamaños de pantalla. -->
+
 <footer class="footer">
   <div class="footer__div">
     <a href="#header" title="Vuelve al principio de la página"
-      ><div class="footer__arrow">
+      ><div class="footer__div--arrow">
         <img
           src="./assets/images/ico-arrow.svg"
           alt="Vuelve al principio de la página"
           title="Vuelve al principio de la página"
         /></div
     ></a>
-    <nav class="footer__nav-menu">
-      <ul class="footer__nav-menu--menu">
+    <nav class="footer__div--nav-menu">
+      <ul class="nav-menu__menu">
         <li>
           <a
             class="link"
@@ -86,6 +90,7 @@
       </li>
     </ul>
   </nav>
+
   <div class="footer__div-small">
     <small class="small">&copy2017</small>
     <small class="small">We <span class="heart">❤︎</span> components</small>

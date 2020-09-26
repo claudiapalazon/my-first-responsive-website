@@ -1,3 +1,6 @@
+// FOOTER
+// Se ha realizado una pequeña animación infinita en el link para volver al principio de la página.
+
 .footer {
   background-color: $color-darkblue;
   height: 465px;
@@ -22,32 +25,52 @@
       position: relative;
       bottom: 45px;
     }
-  }
-  &__arrow {
-    width: 45px;
-    height: 45px;
-    background-color: $color-white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    position: relative;
-    bottom: 37px;
-    animation-duration: 1s;
-    animation-name: arrow;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    @keyframes arrow {
-      from {
-        transform: scale(1);
-      }
+    &--arrow {
+      width: 45px;
+      height: 45px;
+      background-color: $color-white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      position: relative;
+      bottom: 37px;
+      animation-duration: 1s;
+      animation-name: arrow;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      @keyframes arrow {
+        from {
+          transform: scale(1);
+        }
 
-      to {
-        transform: scale(1.2);
+        to {
+          transform: scale(1.2);
+        }
+      }
+      @media all and (min-width: 768px) {
+        bottom: 22px;
       }
     }
-    @media all and (min-width: 768px) {
-      bottom: 22px;
+    &--nav-menu {
+      @media all and (min-width: 768px) {
+        width: 210px;
+      }
+      @media all and (min-width: 1200px) {
+        width: 160px;
+      }
+      .nav-menu__menu {
+        list-style: none;
+        margin-bottom: 30px;
+        .link {
+          font-family: $font-sec;
+          font-size: 16px;
+          line-height: 30px;
+          color: white;
+          text-transform: uppercase;
+          padding: 5px;
+        }
+      }
     }
   }
   &__nav-social {
@@ -60,26 +83,6 @@
       width: 160px;
     }
     &--social {
-      list-style: none;
-      margin-bottom: 30px;
-      .link {
-        font-family: $font-sec;
-        font-size: 16px;
-        line-height: 30px;
-        color: white;
-        text-transform: uppercase;
-        padding: 5px;
-      }
-    }
-  }
-  &__nav-menu {
-    @media all and (min-width: 768px) {
-      width: 210px;
-    }
-    @media all and (min-width: 1200px) {
-      width: 160px;
-    }
-    &--menu {
       list-style: none;
       margin-bottom: 30px;
       .link {
