@@ -48,6 +48,9 @@
           transform: scale(1.2);
         }
       }
+      @media all and (max-width: 768px) {
+        display: none;
+      }
       @media all and (min-width: 768px) {
         bottom: 22px;
       }
@@ -104,6 +107,7 @@
     text-transform: lowercase;
     margin-bottom: 45px;
     color: white;
+    order: -1;
     @media all and (min-width: 768px) {
       width: 210px;
       margin-right: 30px;
